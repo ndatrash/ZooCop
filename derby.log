@@ -1,0 +1,8 @@
+----------------------------------------------------------------
+2015-06-23 15:32:38.507 GMT:
+ Производится загрузка Derby версии The Apache Software Foundation - Apache Derby - 10.6.2.1 - (999685): экземпляр a816c00e-014e-210c-b739-0000057cb208
+в каталоге базы данных C:\Users\SBT-Nikiforov-DA\AppData\Local\Temp\gfembed5343587036481603554tmp\lib\databases\embedded_default  sun.misc.Launcher$AppClassLoader@1893efe 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_71-b14
+Запущен загрузчик классов базы данных - derby.database.classpath=''

@@ -1,0 +1,64 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://java.sun.com/xml/ns/javaee" 
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+  id="WebApp_ID" version="2.5">
+  
+  <session-config>
+	<session-timeout>1</session-timeout>
+  </session-config>
+  
+  <display-name>ZooCop Application</display-name>
+  
+	<listener>
+		<listener-class>
+			com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+                </listener-class>  
+	</listener>
+	<servlet>
+		<servlet-name>wsservice</servlet-name>
+		<servlet-class>
+			com.sun.xml.ws.transport.http.servlet.WSServlet
+                </servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>wsservice</servlet-name>
+		<url-pattern>/ZooCopService</url-pattern>
+		<url-pattern>/FlowService</url-pattern>
+	</servlet-mapping>  
+  
+  <servlet>
+	<servlet-name>ZooGate</servlet-name>
+	<servlet-class>org.zoo.servlet.ZooGate</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>ZooGate</servlet-name>
+	<url-pattern>/ZooGate</url-pattern>
+  </servlet-mapping>  
+  
+	<security-role>
+		<role-name>
+			administrator
+		</role-name>
+	</security-role>
+	
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>
+                operadm
+            </web-resource-name>
+            <url-pattern>/index.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>file</realm-name>
+    </login-config>	
+  
+</web-app>

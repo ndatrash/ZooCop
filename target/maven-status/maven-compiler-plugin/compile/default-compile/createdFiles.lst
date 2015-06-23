@@ -1,0 +1,9 @@
+org\zoo\ws\ZooCopService.class
+org\zoo\rs\ApplicationConfig.class
+org\zoo\entity\Room.class
+org\zoo\ejb\OpticalSensor.class
+org\zoo\ws\GrowerProvider.class
+org\zoo\rs\FlowRestService.class
+org\zoo\ejb\Sensor.class
+org\zoo\ws\FlowService.class
+org\zoo\servlet\ZooGate.class

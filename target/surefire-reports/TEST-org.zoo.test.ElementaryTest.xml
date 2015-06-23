@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="389.146" errors="1" skipped="0" tests="1" name="org.zoo.test.ElementaryTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\bin"/>
+    <property name="java.vm.version" value="24.71-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\SBT-Nikiforov-DA\Projects\Java\MVN\ZooCop"/>
+    <property name="java.runtime.version" value="1.7.0_71-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\SBT-NI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\SBT-Nikiforov-DA\maven-3.0.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\bin;C:\Users\SBT-Nikiforov-DA\maven-3.0.5\bin;;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\db\bin;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\SBT-Nikiforov-DA"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="SBT-Nikiforov-DA"/>
+    <property name="java.class.path" value="C:\Users\SBT-Nikiforov-DA\maven-3.0.5\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_71"/>
+    <property name="java.ext.dirs" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\resources.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\rt.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\sunrsasign.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\jsse.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\jce.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\charsets.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\lib\jfr.jar;C:\Users\SBT-Nikiforov-DA\jdk7_0_1\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\SBT-Nikiforov-DA\maven-3.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.196" classname="org.zoo.test.ElementaryTest" name="simpleCall">
+    <error message="Login failed: Failed file login for zoocopadmin." type="com.sun.enterprise.security.auth.login.common.LoginException">com.sun.enterprise.security.auth.login.common.LoginException: Login failed: Failed file login for zoocopadmin.
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.doPasswordLogin(LoginContextDriver.java:394)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.login(LoginContextDriver.java:240)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.login(LoginContextDriver.java:153)
+	at com.sun.appserv.security.ProgrammaticLogin$1.run(ProgrammaticLogin.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.appserv.security.ProgrammaticLogin.login(ProgrammaticLogin.java:168)
+	at com.sun.appserv.security.ProgrammaticLogin.login(ProgrammaticLogin.java:128)
+	at org.zoo.test.ElementaryTest.simpleCall(ElementaryTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: javax.security.auth.login.LoginException: Failed file login for zoocopadmin.
+	at com.sun.enterprise.security.auth.login.FileLoginModule.authenticate(FileLoginModule.java:84)
+	at com.sun.enterprise.security.auth.login.PasswordLoginModule.authenticateUser(PasswordLoginModule.java:117)
+	at com.sun.appserv.security.AppservPasswordLoginModule.login(AppservPasswordLoginModule.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:762)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:203)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:690)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:687)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:595)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.doPasswordLogin(LoginContextDriver.java:382)
+	... 38 more
+</error>
+    <system-err>июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element security-configurations at [row,col,system-id]: [2,3,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-job-config at [row,col,system-id]: [23,3,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element context-service at [row,col,system-id]: [49,5,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-executor-service at [row,col,system-id]: [50,5,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-scheduled-executor-service at [row,col,system-id]: [51,5,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element managed-thread-factory at [row,col,system-id]: [52,5,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element batch-runtime-configuration at [row,col,system-id]: [93,7,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:49 PM org.jvnet.hk2.config.ConfigParser handleElement
+SEVERE: Ignoring unrecognized element cdi-service at [row,col,system-id]: [110,7,&quot;file:/C:/Users/SBT-NI~1/AppData/Local/Temp/domain4089392729979956287xml&quot;]
+июн 23, 2015 7:43:50 PM com.sun.enterprise.v3.server.AppServerStartup run
+INFO: GlassFish Server Open Source Edition 3.1 (java_re-private) startup time : Embedded (501ms), startup services(446ms), total(947ms)
+июн 23, 2015 7:43:50 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+INFO: JMXStartupService: JMXConnector system is disabled, skipping.
+июн 23, 2015 7:43:50 PM org.glassfish.ejb.embedded.EJBContainerProviderImpl skipJar
+INFO: ... skipping entry with a Manifest file with a special attribute: glassfish-embedded-all-3.1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.EJBContainerProviderImpl skipJar
+INFO: ... skipping entry with a Manifest file with a special attribute: ha-api-3.1.9.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive management-api-3.0.0-b012.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive saaj-impl-1.3.25.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive javax.servlet-api-3.1.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-protocol-servlet-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-core-spi-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jta-1.1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-test-api-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-testenricher-ejb-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive shrinkwrap-descriptors-api-base-2.0.0-alpha-2.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-container-spi-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive test-classes
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-test-spi-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-testenricher-cdi-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jaxb-impl-2.2.10-b140802.1033.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive resolver-20050927.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive derbyclient-10.11.1.1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-container-test-spi-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive junit-4.11.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-testenricher-resource-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jaxb-core-2.2.10-b140802.1033.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding EJB module to ScatteredArchive classes
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive javax.ws.rs-api-2.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive gmbal-api-only-3.1.0-b001.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive stax-ex-1.7.7.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive shrinkwrap-descriptors-spi-2.0.0-alpha-2.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive hamcrest-core-1.3.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-config-impl-base-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-container-test-api-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive policy-2.4.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive commonj.sdo-2.1.1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive mimepull-1.9.4.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive javax.annotation-api-1.2.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive ejb-api-3.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-config-api-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive log4j-1.2.17.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jaxws-api-2.2.11.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive streambuffer-1.5.3.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive woodstox-core-asl-4.2.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive eclipselink-2.5.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive javax.persistence-2.1.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive stax2-api-3.1.1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive javax.xml.soap-api-1.3.7.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-glassfish-embedded-3.1-1.0.0.CR4.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jaxb-api-2.2.12-b140109.1041.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive FastInfoset-1.2.13.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jsr181-api-1.0-MR1.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-core-api-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive shrinkwrap-api-1.0.0.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive jaxws-rt-2.2.10.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFO: [DeploymentElement] adding library to ScatteredArchive arquillian-testenricher-initialcontext-1.0.0.Final.jar
+июн 23, 2015 7:43:52 PM org.glassfish.ejb.embedded.EJBContainerImpl deploy
+INFO: [EJBContainerImpl] Deploying app: org.glassfish.internal.embedded.ScatteredArchive@1b56444 located at null
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.SecurityLifecycle &lt;init&gt;
+INFO: SEC1002: Security Manager is OFF.
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: SEC1010: Entering Security Startup Service
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.PolicyLoader loadPolicy
+INFO: SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFO: SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+июн 23, 2015 7:48:37 PM com.sun.enterprise.security.audit.AuditManager loadAuditModules
+WARNING: Audit: Cannot load AuditModule = default
+java.lang.ClassNotFoundException: com.sun.enterprise.security.ee.Audit
+	at com.sun.enterprise.loader.ASURLClassLoader.findClassData(ASURLClassLoader.java:808)
+	at com.sun.enterprise.loader.ASURLClassLoader.findClass(ASURLClassLoader.java:696)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:274)
+	at com.sun.enterprise.security.audit.AuditManager.loadAuditModule(AuditManager.java:248)
+	at com.sun.enterprise.security.audit.AuditManager.loadAuditModules(AuditManager.java:169)
+	at com.sun.enterprise.security.SecurityLifecycle.onInitialization(SecurityLifecycle.java:195)
+	at com.sun.enterprise.security.SecurityLifecycle.postConstruct(SecurityLifecycle.java:251)
+	at com.sun.hk2.component.AbstractCreatorImpl.inject(AbstractCreatorImpl.java:131)
+	at com.sun.hk2.component.ConstructorCreator.initialize(ConstructorCreator.java:91)
+	at com.sun.hk2.component.AbstractCreatorImpl.get(AbstractCreatorImpl.java:82)
+	at com.sun.hk2.component.SingletonInhabitant.get(SingletonInhabitant.java:67)
+	at com.sun.hk2.component.EventPublishingInhabitant.get(EventPublishingInhabitant.java:139)
+	at com.sun.hk2.component.AbstractInhabitantImpl.get(AbstractInhabitantImpl.java:76)
+	at com.sun.enterprise.security.SecuritySniffer.setup(SecuritySniffer.java:109)
+	at com.sun.enterprise.v3.server.ContainerStarter.startContainer(ContainerStarter.java:116)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainer(ApplicationLifecycle.java:942)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.setupContainerInfos(ApplicationLifecycle.java:650)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:368)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:240)
+	at org.glassfish.kernel.embedded.EmbeddedDeployerImpl.deploy(EmbeddedDeployerImpl.java:193)
+	at org.glassfish.ejb.embedded.EJBContainerImpl.deploy(EJBContainerImpl.java:137)
+	at org.glassfish.ejb.embedded.EJBContainerProviderImpl.createEJBContainer(EJBContainerProviderImpl.java:132)
+	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:127)
+	at org.zoo.test.ElementaryTest.before(ElementaryTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+
+июн 23, 2015 7:48:38 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFO: SEC1011: Security Service(s) Started Successfully
+июн 23, 2015 7:48:39 PM org.glassfish.webservices.metroglue.MetroContainer postConstruct
+INFO: WS10010: Web service endpoint deployment events listener registered successfully.
+июн 23, 2015 7:48:45 PM org.hibernate.validator.util.Version &lt;clinit&gt;
+INFO: Hibernate Validator null
+июн 23, 2015 7:48:45 PM org.hibernate.validator.engine.resolver.DefaultTraversableResolver detectJPA
+INFO: Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+июн 23, 2015 7:49:23 PM org.hibernate.validator.engine.resolver.DefaultTraversableResolver detectJPA
+INFO: Instantiated an instance of org.hibernate.validator.engine.resolver.JPATraversableResolver.
+июн 23, 2015 7:49:24 PM org.eclipse.persistence.session.file:/C:/Users/SBT-NI~1/AppData/Local/Temp/gfembed848415500563011656tmp/applications/classes/_ZooJPA
+INFO: EclipseLink, version: Eclipse Persistence Services - 2.2.0.v20110202-r8913
+июн 23, 2015 7:49:25 PM com.sun.enterprise.resource.allocator.LocalTxConnectorAllocator createResource
+WARNING: RAR5038:Unexpected exception while creating resource for pool DerbyPool. Exception : javax.resource.spi.ResourceAllocationException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+июн 23, 2015 7:49:25 PM com.sun.enterprise.connectors.ConnectionManagerImpl internalGetConnection
+WARNING: RAR5117 : Failed to obtain/create connection from connection pool [ DerbyPool ]. Reason : com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+июн 23, 2015 7:49:25 PM com.sun.gjc.spi.base.DataSource logNonTransientException
+WARNING: jdbc.exc_get_conn
+июн 23, 2015 7:49:25 PM org.eclipse.persistence.session.file:/C:/Users/SBT-NI~1/AppData/Local/Temp/gfembed848415500563011656tmp/applications/classes/_ZooJPA.ejb
+SEVERE: 
+Local Exception Stack: 
+Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.2.0.v20110202-r8913): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+Error Code: 0
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:309)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:138)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:94)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:592)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:233)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:394)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getServerSession(EntityManagerFactoryImpl.java:185)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:242)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:230)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.doJava2DB(PersistenceUnitLoader.java:373)
+	at org.glassfish.persistence.jpa.JPADeployer$2.visitPUD(JPADeployer.java:434)
+	at org.glassfish.persistence.jpa.JPADeployer$PersistenceUnitDescriptorIterator.iteratePUDs(JPADeployer.java:486)
+	at org.glassfish.persistence.jpa.JPADeployer.iterateInitializedPUsAtApplicationPrepare(JPADeployer.java:464)
+	at org.glassfish.persistence.jpa.JPADeployer.event(JPADeployer.java:388)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:128)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:452)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:240)
+	at org.glassfish.kernel.embedded.EmbeddedDeployerImpl.deploy(EmbeddedDeployerImpl.java:193)
+	at org.glassfish.ejb.embedded.EJBContainerImpl.deploy(EJBContainerImpl.java:137)
+	at org.glassfish.ejb.embedded.EJBContainerProviderImpl.createEJBContainer(EJBContainerProviderImpl.java:132)
+	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:127)
+	at org.zoo.test.ElementaryTest.before(ElementaryTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.gjc.spi.base.DataSource.getConnection(DataSource.java:117)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:126)
+	... 43 more
+Caused by: javax.resource.spi.ResourceAllocationException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.internalGetConnection(ConnectionManagerImpl.java:310)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:190)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:165)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:160)
+	at com.sun.gjc.spi.base.DataSource.getConnection(DataSource.java:110)
+	... 44 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.pool.datastructure.RWLockDataStructure.addResource(RWLockDataStructure.java:103)
+	at com.sun.enterprise.resource.pool.ConnectionPool.addResource(ConnectionPool.java:282)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResourceAndAddToPool(ConnectionPool.java:1497)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResources(ConnectionPool.java:940)
+	at com.sun.enterprise.resource.pool.ConnectionPool.initPool(ConnectionPool.java:230)
+	at com.sun.enterprise.resource.pool.ConnectionPool.internalGetResource(ConnectionPool.java:511)
+	at com.sun.enterprise.resource.pool.ConnectionPool.getResource(ConnectionPool.java:381)
+	at com.sun.enterprise.resource.pool.PoolManagerImpl.getResourceFromPool(PoolManagerImpl.java:242)
+	at com.sun.enterprise.resource.pool.PoolManagerImpl.getResource(PoolManagerImpl.java:167)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.getResource(ConnectionManagerImpl.java:341)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.internalGetConnection(ConnectionManagerImpl.java:304)
+	... 48 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.pool.ConnectionPool.createSingleResource(ConnectionPool.java:920)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResource(ConnectionPool.java:1181)
+	at com.sun.enterprise.resource.pool.datastructure.RWLockDataStructure.addResource(RWLockDataStructure.java:98)
+	... 58 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.allocator.LocalTxConnectorAllocator.createResource(LocalTxConnectorAllocator.java:110)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createSingleResource(ConnectionPool.java:903)
+	... 60 more
+Caused by: javax.resource.spi.ResourceAllocationException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.gjc.spi.DSManagedConnectionFactory.createManagedConnection(DSManagedConnectionFactory.java:127)
+	at com.sun.enterprise.resource.allocator.LocalTxConnectorAllocator.createResource(LocalTxConnectorAllocator.java:87)
+	... 61 more
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDataSource.getConnection(Unknown Source)
+	at org.apache.derby.jdbc.ClientDataSource.getConnection(Unknown Source)
+	at com.sun.gjc.spi.DSManagedConnectionFactory.createManagedConnection(DSManagedConnectionFactory.java:113)
+	... 62 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.net.NetAgent.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.initConnection(Unknown Source)
+	at org.apache.derby.client.am.Connection.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 65 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.&lt;init&gt;(Socket.java:425)
+	at java.net.Socket.&lt;init&gt;(Socket.java:208)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 72 more
+
+июн 23, 2015 7:49:25 PM org.glassfish.persistence.jpa.PersistenceUnitLoader doJava2DB
+WARNING: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.2.0.v20110202-r8913): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+Error Code: 0
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.2.0.v20110202-r8913): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+Error Code: 0
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:422)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getServerSession(EntityManagerFactoryImpl.java:185)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:242)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:230)
+	at org.glassfish.persistence.jpa.PersistenceUnitLoader.doJava2DB(PersistenceUnitLoader.java:373)
+	at org.glassfish.persistence.jpa.JPADeployer$2.visitPUD(JPADeployer.java:434)
+	at org.glassfish.persistence.jpa.JPADeployer$PersistenceUnitDescriptorIterator.iteratePUDs(JPADeployer.java:486)
+	at org.glassfish.persistence.jpa.JPADeployer.iterateInitializedPUsAtApplicationPrepare(JPADeployer.java:464)
+	at org.glassfish.persistence.jpa.JPADeployer.event(JPADeployer.java:388)
+	at org.glassfish.kernel.event.EventsImpl.send(EventsImpl.java:128)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:452)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:240)
+	at org.glassfish.kernel.embedded.EmbeddedDeployerImpl.deploy(EmbeddedDeployerImpl.java:193)
+	at org.glassfish.ejb.embedded.EJBContainerImpl.deploy(EJBContainerImpl.java:137)
+	at org.glassfish.ejb.embedded.EJBContainerProviderImpl.createEJBContainer(EJBContainerProviderImpl.java:132)
+	at javax.ejb.embeddable.EJBContainer.createEJBContainer(EJBContainer.java:127)
+	at org.zoo.test.ElementaryTest.before(ElementaryTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.2.0.v20110202-r8913): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+Error Code: 0
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:309)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:138)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:94)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:592)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:233)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:394)
+	... 38 more
+Caused by: java.sql.SQLException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.gjc.spi.base.DataSource.getConnection(DataSource.java:117)
+	at org.eclipse.persistence.sessions.JNDIConnector.connect(JNDIConnector.java:126)
+	... 43 more
+Caused by: javax.resource.spi.ResourceAllocationException: Error in allocating a connection. Cause: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.internalGetConnection(ConnectionManagerImpl.java:310)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:190)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:165)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.allocateConnection(ConnectionManagerImpl.java:160)
+	at com.sun.gjc.spi.base.DataSource.getConnection(DataSource.java:110)
+	... 44 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.pool.datastructure.RWLockDataStructure.addResource(RWLockDataStructure.java:103)
+	at com.sun.enterprise.resource.pool.ConnectionPool.addResource(ConnectionPool.java:282)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResourceAndAddToPool(ConnectionPool.java:1497)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResources(ConnectionPool.java:940)
+	at com.sun.enterprise.resource.pool.ConnectionPool.initPool(ConnectionPool.java:230)
+	at com.sun.enterprise.resource.pool.ConnectionPool.internalGetResource(ConnectionPool.java:511)
+	at com.sun.enterprise.resource.pool.ConnectionPool.getResource(ConnectionPool.java:381)
+	at com.sun.enterprise.resource.pool.PoolManagerImpl.getResourceFromPool(PoolManagerImpl.java:242)
+	at com.sun.enterprise.resource.pool.PoolManagerImpl.getResource(PoolManagerImpl.java:167)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.getResource(ConnectionManagerImpl.java:341)
+	at com.sun.enterprise.connectors.ConnectionManagerImpl.internalGetConnection(ConnectionManagerImpl.java:304)
+	... 48 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.pool.ConnectionPool.createSingleResource(ConnectionPool.java:920)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createResource(ConnectionPool.java:1181)
+	at com.sun.enterprise.resource.pool.datastructure.RWLockDataStructure.addResource(RWLockDataStructure.java:98)
+	... 58 more
+Caused by: com.sun.appserv.connectors.internal.api.PoolingException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.enterprise.resource.allocator.LocalTxConnectorAllocator.createResource(LocalTxConnectorAllocator.java:110)
+	at com.sun.enterprise.resource.pool.ConnectionPool.createSingleResource(ConnectionPool.java:903)
+	... 60 more
+Caused by: javax.resource.spi.ResourceAllocationException: Connection could not be allocated because: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at com.sun.gjc.spi.DSManagedConnectionFactory.createManagedConnection(DSManagedConnectionFactory.java:127)
+	at com.sun.enterprise.resource.allocator.LocalTxConnectorAllocator.createResource(LocalTxConnectorAllocator.java:87)
+	... 61 more
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDataSource.getConnection(Unknown Source)
+	at org.apache.derby.jdbc.ClientDataSource.getConnection(Unknown Source)
+	at com.sun.gjc.spi.DSManagedConnectionFactory.createManagedConnection(DSManagedConnectionFactory.java:113)
+	... 62 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.net.NetAgent.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.initConnection(Unknown Source)
+	at org.apache.derby.client.am.Connection.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.&lt;init&gt;(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 65 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.&lt;init&gt;(Socket.java:425)
+	at java.net.Socket.&lt;init&gt;(Socket.java:208)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 72 more
+
+июн 23, 2015 7:49:25 PM org.glassfish.persistence.common.Java2DBProcessorHelper logI18NWarnMessage
+WARNING: Cannot create tables for application classes. The expected DDL file classes_ZooJPA_createDDL.jdbc is not available.
+июн 23, 2015 7:49:25 PM com.sun.ejb.containers.BaseContainer initializeHome
+INFO: Portable JNDI names for EJB OpticalSensor : [java:global/classes/OpticalSensor!org.zoo.ejb.Sensor, java:global/classes/OpticalSensor]
+июн 23, 2015 7:49:26 PM com.sun.enterprise.security.provider.PolicyConfigurationImpl generatePermissions
+WARNING: No Principals mapped to Role [administrator].
+июн 23, 2015 7:49:26 PM com.sun.appserv.security.ProgrammaticLogin login
+SEVERE: SEC9050: Programmatic login failed
+com.sun.enterprise.security.auth.login.common.LoginException: Login failed: Failed file login for zoocopadmin.
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.doPasswordLogin(LoginContextDriver.java:394)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.login(LoginContextDriver.java:240)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.login(LoginContextDriver.java:153)
+	at com.sun.appserv.security.ProgrammaticLogin$1.run(ProgrammaticLogin.java:174)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.appserv.security.ProgrammaticLogin.login(ProgrammaticLogin.java:168)
+	at com.sun.appserv.security.ProgrammaticLogin.login(ProgrammaticLogin.java:128)
+	at org.zoo.test.ElementaryTest.simpleCall(ElementaryTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: javax.security.auth.login.LoginException: Failed file login for zoocopadmin.
+	at com.sun.enterprise.security.auth.login.FileLoginModule.authenticate(FileLoginModule.java:84)
+	at com.sun.enterprise.security.auth.login.PasswordLoginModule.authenticateUser(PasswordLoginModule.java:117)
+	at com.sun.appserv.security.AppservPasswordLoginModule.login(AppservPasswordLoginModule.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at javax.security.auth.login.LoginContext.invoke(LoginContext.java:762)
+	at javax.security.auth.login.LoginContext.access$000(LoginContext.java:203)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:690)
+	at javax.security.auth.login.LoginContext$4.run(LoginContext.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.login.LoginContext.invokePriv(LoginContext.java:687)
+	at javax.security.auth.login.LoginContext.login(LoginContext.java:595)
+	at com.sun.enterprise.security.auth.login.LoginContextDriver.doPasswordLogin(LoginContextDriver.java:382)
+	... 38 more
+
+</system-err>
+  </testcase>
+</testsuite>

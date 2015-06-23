@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+  version="2.0">
+  <endpoint
+      name="ZooCopService"
+      implementation="org.zoo.ws.ZooCopService"
+      url-pattern="/ZooCopService"/>
+  <endpoint
+      name="FlowService"
+      implementation="org.zoo.ws.FlowService"
+      url-pattern="/FlowService"/>	 
+</endpoints>
