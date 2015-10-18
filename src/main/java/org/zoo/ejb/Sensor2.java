@@ -1,4 +1,3 @@
-/* I have addod this comment to check GIT */
 package org.zoo.ejb;
 
 import javax.ejb.Local;
